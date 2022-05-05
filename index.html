@@ -1,0 +1,67 @@
+<html>
+<head>
+    <script>
+        function hello() {
+            
+            var u = document.getElementById("fname");
+            alert (" Your Password is " + u.value);
+            
+
+        }
+        function myFunction(){
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+        function hov()
+        {
+            var e = document.getElementById('hover');
+            e.style = "background-color: rgb(255, 0, 255);height: 30px; width: 100px;"; //e.style.display = 'none';
+            
+        }
+        function hove()
+        {
+            var e = document.getElementById('hover');
+           e.style = "background-color: rgb(0, 4, 255);height: 30px; width: 100px;"; 
+        }
+</script>
+</head>
+<body style="background-color: black;  color: rgb(128, 228, 57); font-size: large; font-family: 'Times New Roman', Times, serif;" >
+
+    <section style="text-align: center;">
+
+        <table align="Center">
+            <tr>
+                <td>
+            <h1 style="text-align: center;">Welcome to Modern College Registration </h1> <br> <p style="color: rgb(128, 228, 57);">Enter your name: <input type = "text" id = "pname" onkeyup="myFunction()"></p>
+            
+            <p style="color: rgb(128, 228, 57);">Enter your Password: <input type = "password" id = "fname" onkeyup="myFunction()">
+                <button type = "button" onclick="hello()"> Show  </button>
+            </p>
+            
+            <p style="color: rgb(128, 228, 57);">Enter your birth date
+            <input type="date" id="datee"> 
+            </p>
+
+            <h3 style="color: rgb(128, 228, 57);">Select your course
+            <select name = "option">
+                <option value = "aa"> BCA</option>
+                <option value = "bb"> BBA</option>
+                <option value = "cc"> Btch</option>
+                <option value = "dd">Law</option>
+                <option value = "ee"> Game Design</option></select></h3>
+            </td>
+            </tr>     
+        </table>    
+    </section>
+
+    <h3 style="background-color: rgb(173, 173, 173); text-align: center;">Click on photo to view real website</h3>
+    <button type = "button"  onclick="location.href = 'http://moderncollegepune.edu.in/'"> <img src="IMG/modernClg.jpg"  alt="Website" height="500px" width="750px">  </button>
+    <div id = "hover" onmouseover="hov()" onmouseleave="hove()" 
+    style = "background-color: rgb(173, 173, 173);height: 30px; width: 100px;";> <p style="text-align: center; text-anchor: middle; color: rgb(91, 87, 87);"><a href="https://www.moderncollegegk.org/" style="color: rgb(128, 228, 57);">Join us!!</a></p></div> <br><br>
+    <hr>
+    <h2>Follow us For more Info</h2>
+    <button type = "button" onclick="location.href = 'https://www.instagram.com/moderncollegeofficial/?hl=en'"> <img src="IMG/Instagram.png" alt="Website" height="50px" width="50px">  </button>
+    <button type = "button" onclick="location.href = 'https://www.facebook.com/modern747/'"> <img src="IMG/facebook.png" alt="Website" height="50px" width="50px">  </button>
+    <button type = "button" onclick="location.href = 'https://twitter.com/iic_05?lang=en'"> <img src="IMG/Twit.png" height="50px" width="50px">  </button> 
+</body>
+</html>
